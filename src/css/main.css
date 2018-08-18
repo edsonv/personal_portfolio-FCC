@@ -1,0 +1,149 @@
+:root {
+  --font: #ebebeb;
+  --font-muted: #ebebeb8c;
+  --primary-color: #2b3e50;
+  --secondary-color: #4e5d6c;
+  --nav-color: #586169;
+}
+
+body {
+  font-family: 'Lato', system-ui;
+  font-weight: 300;
+  color: var(--font);
+  background: var(--primary-color);
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Nav Menu */
+
+#navbar {
+  font-size: .8em;
+  background: var(--nav-color);
+  align-items: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: .5rem 12%;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  background: transparent;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 .5rem 0 .5rem;
+  text-decoration: none;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--font);
+  transition: color .15s ease-in-out, font-weight .15s ease-in-out;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: white;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+/* End Nav Menu */
+
+
+/* Welcome Section */
+
+#welcome-section {
+  background: var(--secondary-color);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4.5em;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+p#sub-title {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#social-links a {
+  color: var(--font-muted);
+  border: 1px solid var(--font-muted);
+  margin: 4px;
+  margin-left: 0;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 8px 14px;
+  border-radius: .25rem;
+  line-height: 1.5;
+  display: inline-block;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+#social-links a:hover,
+#social-llinks a:focus {
+  color: white;
+  border-color: white;
+}
+
+
+
+
+
+
+
+
+
+/* End Welcome Section */
+
+
+/* About Section */
+
+
+/* End About Section */
+
+h2 {
+  font-weight: 300;
+  margin-bottom: .8em;
+  font-size: 1.5em;
+}
+
+#projects {
+  background: var(--secondary-color);
+}
