@@ -5,7 +5,8 @@ module.exports= {
   ),
   require('postcss-font-magician')( {
     variants: {
-      'Fira Sans': {
+      'Lato': {
+        '300': [],
         '400': [],
       }
     }
