@@ -1,0 +1,252 @@
+#projects {
+  background: var(--secondary-color);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.cards-item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 0.25rem;
+  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: .7rem .25rem;
+  text-align: left;
+}
+
+.card-image {
+  /* border-radius: 0.25rem; */
+  filter: contrast(80%);
+}
+
+.card-image:hover {
+  filter: contrast(100%);
+}
+
+.card-title a {
+  font-size: 1.5em;
+  color: var(--project-title-color);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+}
+
+*/
+
+
+/* .card-image::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+  } */
+
+
+/*   .invie {
+    background: url('../../src/img/invie.png');
+    } */
+
+#platziplooza {
+  background: url('../img/platzipalooza.png');
+}
+
+@media (min-width: 40rem) {
+  .cards-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards-item {
+    width: 33.3333%;
+  }
+}
+
+.card-image::before {
+  /* content: ""; */
+  /* display: block; */
+  /* padding-top: 56.25%; */
+}
+
+@media (min-width: 40rem) {
+  .card-image::before {
+    /* padding-top: 66.6%; */
+  }
+}

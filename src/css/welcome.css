@@ -1,0 +1,41 @@
+#welcome-section {
+  background: var(--secondary-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 4.5em;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+p#sub-title {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#social-links a {
+  color: var(--font-muted);
+  border: 1px solid var(--font-muted);
+  margin: 4px;
+  margin-left: 0;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 8px 14px;
+  border-radius: .25rem;
+  line-height: 1.5;
+  display: inline-block;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+#social-links a:hover,
+#social-llinks a:focus {
+  color: white;
+  border-color: white;
+}
