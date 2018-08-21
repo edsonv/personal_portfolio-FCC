@@ -1,0 +1,56 @@
+form {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "name email" "message message" "submit submit";
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+}
+
+#name {
+  grid-area: name;
+  grid-column: 3/5;
+}
+
+#email {
+  grid-area: email;
+  grid-column: 5/7;
+}
+
+#message {
+  grid-area: message;
+  grid-column: 3/7;
+}
+
+button {
+  grid-area: submit;
+  grid-column: 3/4;
+  padding: .4rem 0;
+  background: var(--project-title-color);
+  border-color: transparent;
+  color: var(--font);
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  padding-bottom: .4rem;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.5;
+  font-size: 1em;
+  color: var(--form-font);
+  padding: .375rem .75rem;
+}
+
+textarea {
+  width: 100%;
+  line-height: 1.5;
+  height: 3rem;
+  resize: vertical;
+  padding: .375rem .75rem;
+}
