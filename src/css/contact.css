@@ -54,3 +54,22 @@ textarea {
   resize: vertical;
   padding: .375rem .75rem;
 }
+
+@media screen and (max-width:1024px) {
+  form {
+    grid-template-areas: "name name" "email email" "message message" "send .";
+  }
+  #name {
+    grid-area: name name;
+    grid-column: 3/7;
+  }
+  #email {
+    grid-area: email email;
+    grid-column: 3/7;
+  }
+  button {
+    grid-area: send;
+    grid-column: 3/5;
+    width: 70%;
+  }
+}
